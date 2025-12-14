@@ -45,5 +45,7 @@ The model was trained for **25 epochs** with **early stopping** and achieved hig
 Check out the working demo of the project here:  🎥🔥
 
 ## 📬 Connect with Me
-If you liked this project, feel free to connect with me on www.linkedin.com/in/gorrela-swami-siva-rama-raju-07a570291 or check out my other projects on https://github.com/Swami-Siva-Rama-Raju?tab=repositories! 🚀
+If you liked this project, feel free to connect with me on www.linkedin.com/in/SaiKrishnaMulukutla
+or check out my other projects on https://github.com/SaiKrishnaMulukutla ! 🚀
+
 
