@@ -14,7 +14,12 @@ MODEL_URL = "https://drive.google.com/uc?id=1f_DYQc0EjgB-efOMLbvo3zq21izVHOgJ"
 if not os.path.exists(MODEL_PATH):
     gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
 
-# Streamlit UI 1.0
+
+st.set_page_config(
+    page_title="Fruit & Vegetable Classifier",
+    page_icon="🎪",
+    layout="centered"
+)
 st.header("Fruit & Vegetable Classifier 🍉🌽")
 
 # Load model
@@ -62,5 +67,6 @@ if uploaded_file is not None:
     
 st.markdown("---")
 st.markdown("<p style='text-align: center; font-size: 14px;'>Created with ❤️ by <strong>Mulukutla Sai Krishna</strong></p>", unsafe_allow_html=True)
+
 
 
