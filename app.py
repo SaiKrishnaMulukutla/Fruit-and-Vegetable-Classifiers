@@ -7,7 +7,9 @@ import os
 import gdown
 
 MODEL_PATH = "model.keras"
-MODEL_URL = "https://drive.google.com/file/d/1f_DYQc0EjgB-efOMLbvo3zq21izVHOgJ/view?usp=sharing"
+
+MODEL_URL = "https://drive.google.com/uc?id=1f_DYQc0EjgB-efOMLbvo3zq21izVHOgJ"
+
 
 if not os.path.exists(MODEL_PATH):
     gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
@@ -16,7 +18,11 @@ if not os.path.exists(MODEL_PATH):
 st.header("Fruit & Vegetable Classifier 🍉🌽")
 
 # Load model
-model = load_model(MODEL_PATH)
+@st.cache_resource
+def load_ml_model():
+    return load_model(MODEL_PATH)
+
+model = load_ml_model()
 # model = load_model("C:/Users/saikr/Documents/Projects/Fruits-and-Vegetables-Images-Classification/Image_classify.keras")
 
 # Define class labels
@@ -56,4 +62,5 @@ if uploaded_file is not None:
     
 st.markdown("---")
 st.markdown("<p style='text-align: center; font-size: 14px;'>Created with ❤️ by <strong>Mulukutla Sai Krishna</strong></p>", unsafe_allow_html=True)
+
 
