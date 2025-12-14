@@ -1,9 +1,5 @@
-pandas
-numpy
-scikit-learn
-tensorflow
-tensorboard
-matplotlib
 streamlit
-scikeras
+tensorflow
+numpy
+pillow
 gdown
